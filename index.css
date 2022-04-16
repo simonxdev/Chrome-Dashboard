@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+} 
+
+body { 
+    margin:0;
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 20px #777;
+}
+
+main {
+    padding: 15px;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.top {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+div.bottom {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+
+div.center {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-self:center;
+}
+
+#time {
+    display:flex;
+    justify-content: center;
+    align-self:center;
+    font-size:40px;
+}
+.cryptobox {
+    display:flex;
+    flex-direction: column;
+        width:250px;
+        background-color:rgba(36, 36, 36, 0.663);
+        padding:10px;
+        border-radius: 10px;;
+        box-shadow: #ffffff 1px 1px 15px 1px;
+}
+
+.cryptoicon {
+    height: 22px;
+    margin-bottom: -5px;
+}
+
+.cryptobox #bitcoin {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.cryptobox #dogecoin {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:5px;
+    align-items:center;
+}
+
+.cryptobox #ethereum {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:5px;
+    align-items:center;
+}
+
+#time {
+    display:flex;
+    align-items:center;
+}
+.timeicon {
+    height:35px;
+    margin-right: 5px;
+    text-shadow: 0px 0px 20px #777;
+}
+
+#news {
+    display:flex;
+    flex-direction: row;
+    gap:15px;
+    margin-top:25px;
+}
+
+.news-item {
+    width: 166px !important;
+    border-radius:15px;
+    cursor:pointer;
+    overflow:hidden;
+    background: rgb(59, 59, 59);
+    background: radial-gradient(circle, rgba(64, 64, 64, 0.651) 0%, rgba(50, 50, 50, 0.659) 50%);
+    box-shadow: #ffffff 1px 1px 15px 1px;
+}
+
+.news-item:hover {
+    box-shadow: #ffffff 1px 1px 25px 1px;
+}
+
+.news-item img {
+    width: 100%;
+    height: 98px;
+}
+
+.news-item h4 {
+    font-size:14px;
+    margin:8px 0px 8px 0px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;  /* Number of lines displayed before it truncate */
+     overflow: hidden;
+}
+
+.news-item button {
+    font-size:16px;
+    width:50%;
+    float:none;
+    margin:0 auto;
+    background-color:rgba(5, 5, 5, 0.663);
+    color: rgb(220, 220, 220);
+    cursor:pointer;
+    border-radius:15px;
+    box-shadow: #ffffff 1px 1px 5px 1px;
+}
+
+.news-item button:hover {
+    background-color:rgba(36, 36, 36, 0.663);
+    color: rgb(220, 220, 220);
+    box-shadow: #ffffff 1px 1px 10px 1px;
+}
+
+.google {
+    display:flex;
+    flex-direction: row;
+    align-self:center;
+}
+
+.googleinput {
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    background: rgb(59, 59, 59);
+    background: radial-gradient(circle, rgba(64, 64, 64, 0.651) 0%, rgba(50, 50, 50, 0.659) 50%);
+    box-shadow: #ffffff 1px 1px 15px 1px;
+    color:white;
+    margin-right:-3px;
+    padding: 3px 10px;
+}
+
+.googlebtn {
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    background-color:rgb(240, 240, 240);
+    color: rgba(5, 5, 5, 0.663);
+    cursor:pointer;
+    box-shadow: #ffffff 1px 1px 5px 1px;
+    margin-left:-3px;
+    padding: 3px 10px;
+}
+
+#tasks {
+    display:flex;
+    flex-direction: column;
+}
+.taskheader {
+    float:right;
+    margin-bottom:10px;
+}
+.tasklist {
+    display:flex;
+    flex-direction: column;
+    width:200px;
+    gap:5px;
+    background-color:rgba(36, 36, 36, 0.663);
+    padding:10px;
+    border-radius: 10px;;
+    box-shadow: #ffffff 1px 1px 15px 1px;
+}
+
+.tasklist p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.task {
+    text-align:center;
+}
+
+.keineintrag {
+    text-align:center;
+}
+
+.taskbtn {
+    font-size:16px;
+    width:100%;
+    float:none;
+    margin:0 auto;
+    background-color:rgba(5, 5, 5, 0.663);
+    color: rgb(220, 220, 220);
+    cursor:pointer;
+    border-radius:15px;
+    box-shadow: #ffffff 1px 1px 5px 1px;
+    
+    margin-top: 8px;
+}
+
+.taskbtn:hover {
+    background-color:rgba(36, 36, 36, 0.663);
+    color: rgb(220, 220, 220);
+    box-shadow: #ffffff 1px 1px 10px 1px;
+}
+
+.addicon {width:15px;}
+
+#weather {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width:200px;
+    background-color:rgba(36, 36, 36, 0.663);
+    padding:10px;
+    border-radius: 10px;;
+    box-shadow: #ffffff 1px 1px 15px 1px;
+}
+
+div.weather-icon {
+    margin-left: -18px;
+}
+
+div.weather-city {
+    width:100%;
+    text-align:center;
+}
+
+div.weather-temp {
+    font-size:30px;
+}
+
+.hidden {display:none;}
+
+.taskcontainer {
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.468);
+    position:fixed;
+    top:0px;
+}
+
+.taskmodal {
+    
+    margin-left: auto;
+  margin-right: auto;
+    margin-top:40%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:500px;
+    background-color:rgba(36, 36, 36, 0.663);
+    padding:10px;
+    border-radius: 10px;;
+    box-shadow: #ffffff 1px 1px 15px 1px;
+}
+
+.taskmodalbtn {
+    font-size:16px;
+    width:100%;
+    float:none;
+    margin:0 auto;
+    background-color:rgba(5, 5, 5, 0.663);
+    color: rgb(220, 220, 220);
+    cursor:pointer;
+    border-radius:15px;
+    box-shadow: #ffffff 1px 1px 5px 1px;
+    
+    margin-top: 8px;
+}
+
+.taskmodalbtn:hover {
+    background-color:rgba(36, 36, 36, 0.663);
+    color: rgb(220, 220, 220);
+    box-shadow: #ffffff 1px 1px 10px 1px;
+}
+
+.addtask {
+    position:relative;
+    width:100%;
+}
+.addtask input {
+    width:100%;
+    border-radius:15px;
+}
+.close {
+    width:20px;
+    position:absolute;
+    top:2px;
+    right:2px;
+    cursor: pointer;
+}
+
